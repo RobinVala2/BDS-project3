@@ -1,0 +1,3 @@
+datasource.url=jdbc:postgresql://localhost:5432/bds_project3
+datasource.username=robin3
+datasource.password=batman

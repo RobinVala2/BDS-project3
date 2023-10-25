@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="398.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="411.0" prefWidth="486.0">
+         <children>
+            <TableView fx:id="injectionTable" prefHeight="220.0" prefWidth="485.0">
+              <columns>
+                <TableColumn fx:id="column_id" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="column_nickname" prefWidth="125.0" text="NICKNAME" />
+                  <TableColumn fx:id="column_password" minWidth="3.0" prefWidth="119.0" text="PASSWORD" />
+                  <TableColumn fx:id="column_email" minWidth="3.0" prefWidth="165.0" text="EMAIL" />
+              </columns>
+            </TableView>
+            <Button fx:id="customButton" layoutX="22.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleCustomButton" prefHeight="25.0" prefWidth="143.0" text="Execute Custom" />
+            <Button fx:id="dropButton" layoutX="22.0" layoutY="295.0" mnemonicParsing="false" onAction="#handleDropTable" prefHeight="25.0" prefWidth="143.0" text="Execute Drop Table" />
+            <Button fx:id="orButton" layoutX="22.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleOrButton" prefHeight="25.0" prefWidth="143.0" text="Execute 1 OR 1=1" />
+            <TextField fx:id="injectionTextField" layoutX="208.0" layoutY="246.0" prefHeight="25.0" prefWidth="242.0" promptText="Custom injection Query" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
